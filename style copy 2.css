@@ -19,11 +19,11 @@ body{
     font-family: "Poppins", sans-serif;
 }
 
-a {
+a{
     text-decoration: none;
 }
 
-ul {
+ul{
     list-style: none;
 }
 
@@ -34,6 +34,7 @@ header{
     position: sticky;
     top: 0;
     width: 100%;
+    /* padding-bottom: 20px; */
 }
 
 /* Logo */
@@ -43,7 +44,6 @@ header{
     font-size: 60px;
     margin-left: 10px;
 
-    /* font-size: 1.5rem; */
 }
 
 /* Nav menu */
@@ -52,15 +52,15 @@ header > nav {
     height: 100%;
     position: fixed;
     background-color: var(--black);
-    overflow: hidden;    
+    overflow: hidden;
+    
 }
 
 header > nav > ul > li > a {
     display: block;
+    padding: 10px 30px;
     padding: 30px;
     color: var(--white);
-
-    /* padding: 6px 20px; */
 }
 
 header > nav > ul > li > a:hover{
@@ -78,8 +78,6 @@ header > nav {
     cursor: pointer;
     float: right;
     padding: 40px 20px;
-
-    /* padding: 16px 20px; */
 }
 
 
@@ -88,7 +86,8 @@ header > nav {
     display: block;
     height: 2px;
     position: relative;
-    width: 24px;   
+    width: 24px;
+    
 }
 
 .hamb-line::before,
@@ -136,13 +135,6 @@ header > nav {
     top:0;
 }
 
-/* Adjust menu */
-.logo { font-size: 1.5rem; }
-header > nav > ul > li > a { 
-    padding: 6px 20px; 
-}
-.hamb { padding: 16px 20px; }
-
 
 /* Responsiveness */
 
@@ -154,6 +146,7 @@ header > nav > ul > li > a {
         float: right;
         width: fit-content;
         background-color: transparent;
+
     }
 
     header > nav > ul > li {
